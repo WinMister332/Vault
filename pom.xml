@@ -270,7 +270,7 @@
 					<artifactSet>
 						<includes>
 							<include>net.milkbowl.vault:VaultAPI</include>
-							<include>org.bstats</include>
+							<include>org.bstats:bstats-bukkit</include>
 						</includes>
 					</artifactSet>
 					<relocations>
