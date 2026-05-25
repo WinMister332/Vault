@@ -6,7 +6,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<paperVersion>1.26.1-R0.1-SNAPSHOT</paperVersion>
 		<purpurVersion>1.26.1-R0.1-SNAPSHOT</purpurVersion>
-		<mainClass>${project.groupId}.${project.artifactId}</mainClass>
+		<bukkitMainClass>${project.groupId}.VaultBukkit</bukkitMainClass>
+		<paperMainClass>${project.groupId}.VaultPaper</paperMainClass>
 		<api.version>1.7</api.version>
 	</properties>
 
@@ -260,6 +261,7 @@
 				<filtering>true</filtering>
 				<includes>
 					<include>plugin.yml</include>
+					<include>paper-plugin.yml</include>
 				</includes>
 			</resource>
 		</resources>

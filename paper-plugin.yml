@@ -5,7 +5,7 @@ authors: [cereal, Sleaker, mung3r]
 website: ${project.url}
 api-version: 1.26
 
-main: ${bukkitMainClass}
+main: ${paperMainClass}
 load: startup
 
 commands:
