@@ -1,4 +1,4 @@
-# Vault - Abstraction Library for Bukkit - [![Build Status](https://app.travis-ci.com/MilkBowl/Vault.svg?branch=master)](https://app.travis-ci.com/MilkBowl/Vault)
+# Vault - Abstraction Library for Paper/Purpur - [![Build Status](https://app.travis-ci.com/MilkBowl/Vault.svg?branch=master)](https://app.travis-ci.com/MilkBowl/Vault)
 
 ## For Developers:
 Please see the [VaultAPI](https://www.github.com/MilkBowl/VaultAPI) page for
@@ -9,7 +9,7 @@ this change in your build process.
 
 ## Installing
 Installing Vault is as simple as copying the provided "Vault.jar" to your
-"<bukkit-install-dir>/plugins" directory, and the rest is automatic! If you
+"<paper-or-purpur-install-dir>/plugins" directory, and the rest is automatic! If you
 wish to perform configuration changes, this can be done via a configuration
 file but should not be necessary in most cases. See the "Advanced
 Configuration" section for more information.

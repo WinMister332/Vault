@@ -4,7 +4,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<bukkitVersion>1.13.1-R0.1-SNAPSHOT</bukkitVersion>
+		<paperVersion>1.26.1-R0.1-SNAPSHOT</paperVersion>
+		<purpurVersion>1.26.1-R0.1-SNAPSHOT</purpurVersion>
 		<mainClass>${project.groupId}.${project.artifactId}</mainClass>
 		<api.version>1.7</api.version>
 	</properties>
@@ -40,12 +41,12 @@
 		<repository>
 			<id>pub-repo</id>
 			<name>Public Releases</name>
-			<url>http://nexus.hc.to/content/repositories/pub_releases/</url>
+			<url>https://nexus.hc.to/content/repositories/pub_releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>pub-repo</id>
 			<name>Public Snapshots</name>
-			<url>http://nexus.hc.to/content/repositories/pub_snapshots/</url>
+			<url>https://nexus.hc.to/content/repositories/pub_snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -53,15 +54,19 @@
 		<repository>
 			<id>pub-repo</id>
 			<name>Public Releases</name>
-			<url>http://nexus.hc.to/content/repositories/pub_releases/</url>
+			<url>https://nexus.hc.to/content/repositories/pub_releases/</url>
 		</repository>
 		<repository>
-			<id>spigot-repo</id>
-			<url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+			<id>papermc-repo</id>
+			<url>https://repo.papermc.io/repository/maven-public/</url>
+		</repository>
+		<repository>
+			<id>purpur-repo</id>
+			<url>https://repo.purpurmc.org/snapshots</url>
 		</repository>
 		<repository>
 			<id>escapecraft-repo</id>
-			<url>http://dev.escapecraft.com/maven</url>
+			<url>https://dev.escapecraft.com/maven</url>
 		</repository>
 		<repository>
 			<id>codemc-repo</id>
@@ -71,9 +76,16 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>${bukkitVersion}</version>
+			<groupId>io.papermc.paper</groupId>
+			<artifactId>paper-api</artifactId>
+			<version>${paperVersion}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.purpurmc.purpur</groupId>
+			<artifactId>purpur-api</artifactId>
+			<version>${purpurVersion}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.milkbowl.vault</groupId>
