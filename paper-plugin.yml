@@ -10,7 +10,7 @@ load: startup
 
 commands:
   vault-info:
-    description: Displays information about Vault 
+    description: Displays information about Vault
     usage: |
            /<command> - Displays Vault information
     permission: vault.admin
